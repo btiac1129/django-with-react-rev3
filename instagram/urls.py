@@ -7,6 +7,6 @@ router.register('post', views.PostViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls)),    
-    path('public/', views.PostListAPIView.as_view()),
+#    path('public/', views.public_post_list),
+    path('', include(router.urls)),
 ]
